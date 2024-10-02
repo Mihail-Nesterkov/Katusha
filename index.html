@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href = "fonts/roboto/stylesheet.css" rel = "stylesheet" type = "text/css" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="firstHeader">
+      <div class="logoHeader">
+        <img src="./img/logo.png" alt="logo">
+        <p class="heading">Уважаемые коллеги и друзья!</p>
+      </div>
+      <div class="date">
+        <p class="dateEvent">26</p>
+        <p class="monthEvent">сентября</p>
+        <hr>
+        <p class="timeEvent">11:00</p>
+      </div>
+    </div>
+    <div class="headerBlock">
+      <p>Незаметно пролетел еще один год и мы вновь хотим поблагодарить каждого из вас за весомый вклад в успехи компании «Катюша Принт»
+        на рынке печатной техники Урала.
+        </p>
+      <p>Вместе мы продолжаем развиваться и покорять рынок ИТ-решений!</p>
+    </div>
+    <div class="wrapper">
+      <div class="headerText">
+        <p class="normText">Мы приглашаем вас на наше традиционное мероприятие</p>
+        <p class="fatText">«Катюша - Урал собирает друзей»,</p>
+        <p class="normText">где мы отметим достижения прошедшего года, обсудим планы на будущее и укрепим наше партнерство. Будем рады видеть вас и поделиться положительными моментами нашего совместного пути.</p>
+      </div>
+      <div class="headerInfo">
+        <p><img src="./img/icon/iconGeo.png" alt="icon geolocation">г. Екатеринбург, Шейнкмана 10</p>
+        <p>2024 год</p>
+        <p><img src="./img/icon/iconMail.png" alt="icon email">dieci-ekb.com</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <p class="headerMain">Программа проведения:</p>
+      <hr>
+      <div class="program">
+        <ul>
+          <li><p class="time">11:00 - 12:00</p><p class="programMenu">Pегистрация гостей и приветственный кофе</p></li>
+          <li><p class="time">12:00 - 12:30</p><p class="programMenu">Приветственное слово<br><span>Константин Никифоров</span> - руководитель департамента партнерских продаж</p></li>
+          <li><p class="time">12:30 - 13:00</p><p class="programMenu">«Катюша Принт» вчера, сегодня, завтра» <br><span>Кирилл Дьяченко</span> - руководитель Уральского представительства</p></li>
+          <li><p class="time">13:00 - 14:00</p><p class="programMenu">Обзор текущего модельного ряда Катюша и Sindoh <br><span>Андрей Ванькевич</span> - руководитель отдела поддержки и продвижения продукции</p></li>
+          <li><p class="time">14:00 - 15:00</p><p class="programMenu">Обеденный перерыв</p></li>
+          <li><p class="time">15:00 - 16:30</p><p class="programMenu">Развитие продаж «Смарт Принт» на Урале <br><span>Дмитрий Личкин</span> - пресейл департамента разработки «Смарт Принт»</p></li>
+          <li><p class="time">16:30 - 18:00</p><p class="programMenu">Ответы на вопросы \ свободное время</p></li>
+          <li><p class="time">18:00 - 23:00</p><p class="programMenu">Гала-ужин</p></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="geo">
+        <div class="mapBlock">
+          <img src="./img/map.png" alt="map">
+        </div>
+        <div class="houseBlock">
+          <img src="./img/house.png" alt="house">
+          <div class="firstP">
+          <p>Мы приглашаем <span>одного
+            или двух</span> представителей
+            от вашей компании.</p>
+            <img src="./img/sign.png" alt="sign">
+          </div>
+          <p>Вопрос с <span>трансфером</span>
+            до площадки и размещением
+            в отелях Екатеринбурга решается вами самостоятельно.</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="gradient">
+        <div class="gradientText">
+          <p>С надеждой на скорую встречу,
+        команда Уральского
+        Представительства «Катюши Принт»,
+        Кирилл Дьяченко и Яна Талпа</p>
+        <hr>
+      </div>
+    </div>
+  <button class="reg" onclick="onModal()">зарегистрироваться</button>
+    <div class="gradientSec"></div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+    <div class="footter">
+      <div class="iconFoot">
+        <img src="./img/icon/footerIconMail.png" alt="mail" onclick="mySite()">
+        <img src="./img/icon/footerIconTG.png" alt="telegram">
+      </div>
+      <img src="./img/logo_grey.png" alt="logo">
+    </div>
+    </div>
+  </footer>
+  <div class="modal" id="mod" onclick="offModal()">
+
+  </div>
+  <div class="modalBlock" id="modalB">
+    <p class="close" onclick="offModal()">X</p>
+    <form action="" method="post">
+      <div class="formExample">
+        <label for="name">Введите ваше имя</label>
+        <input type="text" name="name" id="name" oninput="inputClass(name)" required placeholder="Имя" >
+      </div>
+      <div class="formExample">
+        <label for="surname">Введите вашу фамилию</label>
+        <input type="text" name="surname" id="surname" oninput="inputClass(name)" required placeholder="Фамилия">
+      </div>
+      <div class="formExample">
+        <label for="tel">Введите ваш телефон</label>
+        <input type="number" name="tel" id="tel" oninput="inputClass(name)" required placeholder="+76665554433">
+      </div>
+    </form>
+    <button id="toSend" onclick="toSend()">Отправить</button>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
